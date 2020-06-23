@@ -302,7 +302,7 @@ export default (variables /* : * */ = variable) => {
           color: variables.toolbarBtnColor
         },
         'NativeBase.Text': {
-          color: variables.inverseTextColor,
+          color: variables.toolbarBtnColor,
           backgroundColor: 'transparent'
         }
       }

@@ -76,6 +76,7 @@ export function defineThemeVars () {
     // Text
     textColor: '#000',
     inverseTextColor: '#fff',
+    textNoteColor: '#444444',
     noteFontSize: 14,
     get defaultTextColor() {
       return this.textColor;
@@ -252,15 +253,15 @@ export function defineThemeVars () {
     tabActiveBgColor: platform === PLATFORM.IOS ? '#cde1f9' : '#3F51B5',
 
     // Header
+    toolbarDefaultBg: '#F8F8F8',
     toolbarBtnColor: '#404040',
-    toolbarDefaultBg: platform === PLATFORM.IOS ? '#F8F8F8' : '#3F51B5',
     toolbarHeight: platform === PLATFORM.IOS ? 64 : 56,
     toolbarSearchIconSize: platform === PLATFORM.IOS ? 20 : 23,
-    toolbarInputColor: platform === PLATFORM.IOS ? '#CECDD2' : '#fff',
+    toolbarInputColor: '#CECDD2',
     searchBarHeight: platform === PLATFORM.IOS ? 30 : 40,
     searchBarInputHeight: platform === PLATFORM.IOS ? 30 : 50,
-    toolbarBtnTextColor: platform === PLATFORM.IOS ? '#007aff' : '#fff',
-    toolbarDefaultBorder: platform === PLATFORM.IOS ? '#a7a6ab' : '#3F51B5',
+    toolbarBtnTextColor: '#000',
+    toolbarDefaultBorder: '#a7a6ab',
     iosStatusbar: platform === PLATFORM.IOS ? 'dark-content' : 'light-content',
     get statusBarColor() {
       return color(this.toolbarDefaultBg)

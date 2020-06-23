@@ -28,7 +28,6 @@ class Item extends Component {
       isFocused: false,
       text: '',
       topAnim: new Animated.Value(18),
-      opacAnim: new Animated.Value(1)
     };
   }
   componentDidMount() {
@@ -98,21 +97,11 @@ class Item extends Component {
       duration: 150,
       useNativeDriver: false
     }).start();
-    Animated.timing(this.state.opacAnim, {
-      toValue: 1,
-      duration: 150,
-      useNativeDriver: false
-    }).start();
   }
 
   floatUp(e) {
     Animated.timing(this.state.topAnim, {
       toValue: e || -22,
-      duration: 150,
-      useNativeDriver: false
-    }).start();
-    Animated.timing(this.state.opacAnim, {
-      toValue: 0.7,
       duration: 150,
       useNativeDriver: false
     }).start();
@@ -205,7 +194,7 @@ class Item extends Component {
                     : 0,
                 right: 0,
                 top: this.state.topAnim,
-                opacity: this.state.opacAnim,
+                opacity: 1,
                 paddingTop: Platform.OS === 'ios' ? undefined : undefined,
                 paddingBottom: Platform.OS === 'ios' ? undefined : 12
               }}
@@ -286,7 +275,7 @@ class Item extends Component {
                     : 0,
                 right: 0,
                 top: this.state.topAnim,
-                opacity: this.state.opacAnim,
+                opacity: 1,
                 paddingTop: Platform.OS === 'ios' ? undefined : undefined,
                 paddingBottom: Platform.OS === 'ios' ? undefined : 12
               }}
@@ -342,7 +331,7 @@ class Item extends Component {
             left: this.props.last ? 15 : 0,
             right: 0,
             top: this.state.topAnim,
-            opacity: this.state.opacAnim,
+            opacity: 1,
             paddingTop: Platform.OS === 'ios' ? undefined : undefined,
             paddingBottom: Platform.OS === 'ios' ? undefined : 12
           }}

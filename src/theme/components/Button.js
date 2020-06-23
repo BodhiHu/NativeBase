@@ -320,20 +320,20 @@ export default (variables /* : * */ = variable) => {
       marginRight: 0,
       color: variables.textColor,
       fontSize: variables.buttonTextSize,
-      paddingHorizontal: 16,
+      paddingHorizontal: 5,
       backgroundColor: 'transparent'
     },
 
     'NativeBase.Icon': {
       color: variables.inverseTextColor,
       fontSize: 24,
-      marginHorizontal: 16,
+      marginHorizontal: 5,
       paddingTop: platform === PLATFORM.IOS ? 2 : undefined
     },
     'NativeBase.IconNB': {
       color: variables.inverseTextColor,
       fontSize: 24,
-      marginHorizontal: 16,
+      marginHorizontal: 5,
       paddingTop: platform === PLATFORM.IOS ? 2 : undefined
     },
 
@@ -346,7 +346,7 @@ export default (variables /* : * */ = variable) => {
         marginLeft: 16
       },
       'NativeBase.Icon': {
-        marginRight: 5,
+        marginRight: 2,
         marginLeft: 16
       }
     },
@@ -386,7 +386,7 @@ export default (variables /* : * */ = variable) => {
     shadowOpacity: platformStyle === PLATFORM.MATERIAL ? 0.2 : undefined,
     shadowRadius: platformStyle === PLATFORM.MATERIAL ? 1.2 : undefined,
     alignItems: 'center',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
     alignSelf: 'flex-start'
   };
   return buttonTheme;

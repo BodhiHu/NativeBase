@@ -25,6 +25,7 @@ export function defineThemeVars () {
 
       // Text
       textColor: '#fff',
+      textNoteColor: '#ddd',
       inverseTextColor: '#000',
 
       // Accordion
@@ -69,10 +70,10 @@ export function defineThemeVars () {
       tabBarActiveTextColor: platform === PLATFORM.IOS ? '#007aff' : '#000',
 
       // Header
-      toolbarBtnColor: '#B0B0B0',
-      toolbarDefaultBg: platform === PLATFORM.IOS ? '#080808' : '#3F51B5',
-      toolbarInputColor: platform === PLATFORM.IOS ? '#CECDD2' : '#000',
-      toolbarBtnTextColor: platform === PLATFORM.IOS ? '#007aff' : '#000',
+      toolbarDefaultBg: '#080808',
+      toolbarBtnColor: '#f0f0f0',
+      toolbarInputColor: '#CECDD2',
+      toolbarBtnTextColor: '#f0f0f0',
       iosStatusbar: 'dark-content',
 
       // InputGroup

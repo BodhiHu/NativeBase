@@ -35,8 +35,6 @@ class Text extends Component {
       text = children;
     }
 
-    //console.debug(StyleSheet.flatten(rnTextProps.style));
-
     return (
       <RNText ref={c => (this._root = c)}
         {...rnTextProps}
