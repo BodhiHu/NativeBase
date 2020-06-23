@@ -7,6 +7,7 @@ export default (variables /* : * */ = variable) => {
     '.focused': {
       width: 0
     },
+    color: variables.textColor,
     fontSize: 17,
     fontFamily: variables.fontFamily,
   };

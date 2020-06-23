@@ -285,9 +285,7 @@ export function defineThemeVars () {
     get inputColor() {
       return this.textColor;
     },
-    get inputColorPlaceholder() {
-      return '#575757';
-    },
+    inputColorPlaceholder: '#575757',
 
     // Line Height
     buttonLineHeight: 19,
